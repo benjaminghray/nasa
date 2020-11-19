@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+
+require "pry"
+require "require_all"
+require "json"
+require "rest-client"
+require_all "lib"
+Nasa::API.new.get_categories
+Nasa::Cli.new.greeting
+
