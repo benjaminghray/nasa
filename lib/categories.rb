@@ -15,14 +15,14 @@ module Nasa
         
         def self.categories
             @@categories
-           # binding.pry
         end
+
         def self.titles
             self.categories.collect do |i|
              i.title
             end
-        
         end
+        
         def self.display_categories
             self.titles.each.with_index(1) do |x,y|
                 puts "#{y}. #{x}"           
@@ -31,4 +31,3 @@ module Nasa
 
     end
 end
-
