@@ -27,9 +27,9 @@ module Nasa
       def print_events(events)
         events.each do |e|
           puts "#{e.title}"
-          puts "~~~~~~~~~~"
+          puts "~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~"
         end
-
+      
       end
   end
 end
