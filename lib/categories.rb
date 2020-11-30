@@ -25,7 +25,8 @@ module Nasa
         
         def self.display_categories
             self.titles.each.with_index(1) do |x,y|
-                puts "#{y}. #{x}"           
+                puts "#{y}. #{x}"  
+            
             end
         end
 
