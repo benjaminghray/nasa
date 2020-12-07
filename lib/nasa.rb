@@ -1,5 +1,5 @@
 ##require "nasa/version"
-
+require 'pry'
 module Nasa
   class Cli
     def greeting
@@ -48,9 +48,7 @@ module Nasa
          puts 'do you want info on another event?'
         select_categorie
      end 
-      
   end
 end
 
 
-#what happens to a category with 0 events 

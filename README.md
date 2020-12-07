@@ -8,4 +8,5 @@
   on Nasa's EONET satellite. This satellite moniters the globe 24/7 in order to 
   catalogue and hopefully predict future events.
 
-## run project with "./bin/nasa"  
+## run application with "./bin/nasa"  
+## exit application with "exit"
