@@ -3,24 +3,36 @@ require 'pry'
 module Nasa
   class Cli
     def greeting
-      puts "Hey, Welcome to the Nasa World Event gem. Would you like to view a list of natural events/disters and get information on them? "
-      puts "(type 'yes','no', or 'exit')"
-      puts ""
+      puts ''
+      puts "                  Hi, Welcome to the Nasa World Event gem!"
+      puts '            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
+       puts "Would you like to view a list of natural events/disasters and get information on them?"
+       puts""
+       puts "                          Type 'yes' or 'no'"
+       puts ""
       input = gets.chomp.downcase 
-      while input != "exit" do
       if input == 'yes'
         Nasa::Categories.display_categories
         select_categorie
+      elsif input == 'no'
+        puts ""
+        puts '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
+        puts 'Thanks for using my application!'
+        puts '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
+        exit
       else 
-        puts "you done messed up"
         greeting
       
       end
     end
     def select_categorie
-      puts "please enter corresponding number under #{Nasa::Categories.titles.length+1}"
+      puts""
+      puts "Please enter corresponding number under #{Nasa::Categories.titles.length+1}"
       input = gets.chomp
+      if input == 'exit'
+        puts ""
         puts 'Thanks for using my application!'
+          exit
       else
         input = input.to_i
         if input == 0 || !input.between?(1,Nasa::Categories.titles.length)
@@ -36,8 +48,8 @@ module Nasa
       end
     end
       def print_events(events)
-      # binding.pry
        if events.empty? 
+          puts ''
           puts 'There is no information on the event based on your answer'
        else 
          events.each do |e|
@@ -45,8 +57,8 @@ module Nasa
            puts "~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~"
          end
        end
-            
-         puts 'do you want info on another event?'
+         puts ""   
+         puts "Type 'exit' if you are finished. Follow the next prompt if you want to continue." 
         select_categorie
      end 
   end

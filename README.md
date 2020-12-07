@@ -1,12 +1,36 @@
+# NASA EONET Natural Event Sattelite App
+This CLI app presents recent natural event information from NASA's EONET sattelite.
 
-# nasa
-        
+## Installation
 
-## README
+Make sure you have the following gems installed first:
 
-  This project shows names of recent natural disasters or events based
-  on Nasa's EONET satellite. This satellite moniters the globe 24/7 in order to 
-  catalogue and hopefully predict future events.
+```ruby
+gem install json
+gem install rest-client
+gem install require_all
 
-## run application with "./bin/nasa"  
-## exit application with "exit"
+```
+
+## How To Use
+
+Run the code below in your terminal to start.
+
+```ruby
+./bin/nasa
+```
+
+You will be prompted to start the app.
+Follow the prompts to navigate through the events and recieve information.
+
+## Where to find this code:
+
+The ruby code can be found at https://github.com/benjaminghray/nasa
+
+## Contributing
+
+Bug reports and pull requests are welcome on GitHub at https://github.com/benjaminghray/nasa . This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+
+## License
+
+This project is available as an open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
