@@ -7,8 +7,6 @@ Make sure you have the following gems installed first:
 
 ```ruby
 gem install json
-gem install rest-client
-gem install require_all
 
 ```
 
