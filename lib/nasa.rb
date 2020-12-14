@@ -1,4 +1,3 @@
-##require "nasa/version"
 require 'pry'
 module Nasa
   class Cli
